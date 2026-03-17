@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>100 AI Prompts for Spa & Wellness Businesses</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #FDFBF7;
+            --text-color: #2D3748;
+            --accent-color: #A3B19B;
+            --secondary-bg: #F5F2EA;
+            --card-bg: rgba(255, 255, 255, 0.7);
+            --font-heading: 'Playfair Display', serif;
+            --font-body: 'Inter', sans-serif;
+            --spacing-lg: 120px;
+            --spacing-md: 80px;
+            --spacing-sm: 40px;
+            --glass-border: rgba(163, 177, 155, 0.2);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: var(--font-body);
+            line-height: 1.7;
+            font-size: 1.1rem;
+            font-weight: 300;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: var(--font-heading);
+            font-weight: 400;
+            color: var(--text-color);
+            line-height: 1.2;
+        }
+
+        /* Layout */
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 5%;
+        }
+
+        section {
+            padding: var(--spacing-md) 0;
+        }
+
+        /* Hero */
+        .hero {
+            height: 90vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: linear-gradient(135deg, #FDFBF7 0%, #F5F2EA 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -10%;
+            right: -10%;
+            width: 40%;
+            height: 60%;
+            background: radial-gradient(circle, rgba(163, 177, 155, 0.1) 0%, transparent 70%);
+            z-index: 1;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero p.tag-line {
+            text-transform: uppercase;
+            letter-spacing: 0.3em;
+            font-size: 0.9rem;
+            color: var(--accent-color);
+            margin-bottom: 1.5rem;
+            font-weight: 500;
+        }
+
+        .hero h1 {
+            font-size: clamp(3rem, 7vw, 6rem);
+            margin-bottom: 1.5rem;
+            max-width: 900px;
+        }
+
+        .hero p.description {
+            font-size: 1.25rem;
+            color: #718096;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Nav */
+        nav {
+            position: sticky;
+            top: 0;
+            background: rgba(253, 251, 247, 0.9);
+            backdrop-filter: blur(10px);
+            z-index: 100;
+            border-bottom: 1px solid var(--glass-border);
+            padding: 1rem 0;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--text-color);
+            font-size: 0.9rem;
+            font-weight: 400;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--accent-color);
+        }
+
+        /* Content Sections */
+        .section-header {
+            margin-bottom: 3rem;
+            text-align: center;
+        }
+
+        .section-header h2 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .section-header p {
+            font-style: italic;
+            color: #718096;
+        }
+
+        /* Prompt Cards */
+        .prompt-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+        }
+
+        .prompt-card {
+            background: var(--card-bg);
+            border: 1px solid var(--glass-border);
+            border-radius: 12px;
+            padding: 2rem;
+            transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+        }
+
+        .prompt-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .prompt-title {
+            font-family: var(--font-heading);
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--accent-color);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .prompt-explanation {
+            font-size: 1rem;
+            color: #4A5568;
+            margin-bottom: 1.5rem;
+        }
+
+        .prompt-content {
+            background: #F8F9FA;
+            padding: 1.5rem;
+            border-radius: 8px;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 0.95rem;
+            color: #2D3748;
+            border-left: 4px solid var(--accent-color);
+            white-space: pre-wrap;
+            position: relative;
+        }
+
+        .copy-btn {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: var(--accent-color);
+            color: white;
+            border: none;
+            padding: 5px 12px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.75rem;
+            font-family: var(--font-body);
+            opacity: 0.8;
+            transition: opacity 0.3s;
+        }
+
+        .copy-btn:hover {
+            opacity: 1;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--text-color);
+            color: var(--bg-color);
+            padding: 4rem 5%;
+            text-align: center;
+        }
+
+        /* Mobile */
+        @media (max-width: 768px) {
+            nav ul { gap: 1rem; }
+            .hero h1 { font-size: 3rem; }
+            .section-header h2 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+
+<section class="hero">
+    <div class="hero-content container">
+        <p class="tag-line">The Ultimate Wellness Toolkit</p>
+        <h1>100 AI Prompts for Spa & Wellness Businesses</h1>
+        <p class="description">Master AI to automate your marketing, elevate client experiences, and scale your wellness brand with precision.</p>
+    </div>
+</section>
+
+<nav id="navbar">
+    <ul class="container">
+        <li><a href="#intro">Intro</a></li>
+        <li><a href="#social">Social Media</a></li>
+        <li><a href="#marketing">Marketing</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#wellness">Wellness</a></li>
+        <li><a href="#business">Business</a></li>
+        <li><a href="#bonus">Bonus</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+    <section id="intro">
+        <div class="section-header">
+            <h2>Welcome to the Future of Wellness</h2>
+            <p>A Professional Introduction</p>
+        </div>
+        <div style="max-width: 800px; margin: 0 auto; line-height: 2;">
+            <p>Artificial Intelligence is no longer just for tech giants; it is the most powerful ally a spa owner can have. In an industry built on human touch and personal connection, AI serves as the digital backbone that frees you from administrative burnout and repetitive tasks.</p>
+            <p><strong>How to use this book:</strong> Simply copy the prompts in the gray boxes, replace the text in <strong>[BRACKETS]</strong> with your specific details, and watch your marketing and operations transform into a streamlined, high-growth engine.</p>
+        </div>
+    </section>
+
+    <section id="toc" style="background: var(--secondary-bg); border-radius: 20px; padding: 4rem;">
+        <div class="section-header">
+            <h2>Table of Contents</h2>
+        </div>
+        <ul style="list-style: none; max-width: 600px; margin: 0 auto; font-size: 1.2rem;">
+            <li style="margin-bottom: 1rem;"><a href="#intro" style="text-decoration: none; color: var(--text-color);">1. Introduction</a></li>
+            <li style="margin-bottom: 1rem;"><a href="#how-ai" style="text-decoration: none; color: var(--text-color);">2. How Spa Businesses Can Use AI</a></li>
+            <li style="margin-bottom: 1rem;"><a href="#social" style="text-decoration: none; color: var(--text-color);">3. 100 AI Prompts Organized into Categories</a>
+                <ul style="margin-left: 2rem; font-size: 1rem; opacity: 0.8;">
+                    <li>Social Media Content (20 Prompts)</li>
+                    <li>Spa Marketing & Promotions (20 Prompts)</li>
+                    <li>Client Experience & Customer Journey (15 Prompts)</li>
+                    <li>Spa Services & Menu Descriptions (15 Prompts)</li>
+                    <li>Wellness Content Creation (15 Prompts)</li>
+                    <li>Spa Business Strategy (15 Prompts)</li>
+                </ul>
+            </li>
+            <li style="margin-bottom: 1rem; margin-top: 1rem;"><a href="#bonus" style="text-decoration: none; color: var(--text-color);">4. Bonus: 10 Customizable Power Prompts</a></li>
+            <li style="margin-bottom: 1rem;"><a href="#tips" style="text-decoration: none; color: var(--text-color);">5. Final Tips for Using AI in a Spa Business</a></li>
+        </ul>
+    </section>
+
+    <section id="how-ai">
+        <div class="section-header">
+            <h2>How Spa Businesses Can Use AI</h2>
+            <p>Scaling Personalization with Precision</p>
+        </div>
+        <div style="max-width: 800px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+            <div>
+                <h4 style="margin-bottom: 1rem; color: var(--accent-color);">Marketing & Engagement</h4>
+                <p style="font-size: 0.95rem;">Generate weeks of social media content in minutes. Write emails that sound personalized to every client, and create ad copy that targets your local niche with surgery-like precision.</p>
+            </div>
+            <div>
+                <h4 style="margin-bottom: 1rem; color: var(--accent-color);">Customer Experience</h4>
+                <p style="font-size: 0.95rem;">Automate post-care advice, follow-ups, and loyalty reminders. Provide a high-touch feeling without the manual labor, ensuring no client feels like "just a number."</p>
+            </div>
+            <div>
+                <h4 style="margin-bottom: 1rem; color: var(--accent-color);">Operational Efficiency</h4>
+                <p style="font-size: 0.95rem;">Use AI to draft Standard Operating Procedures (SOPs), analyze your menu's ROI, and help with staff training and recruitment.</p>
+            </div>
+            <div>
+                <h4 style="margin-bottom: 1rem; color: var(--accent-color);">Content Authority</h4>
+                <p style="font-size: 0.95rem;">Establish yourself as a wellness thought leader by generating high-quality blog posts, newsletters, and educational guides backed by verified wellness logic.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 1: Social Media Content -->
+    <section id="social">
+        <div class="section-header">
+            <span style="font-size: 4rem; color: var(--accent-color); opacity: 0.2;">01</span>
+            <h2>Social Media Content</h2>
+            <p>Engagement-driven prompts for Instagram, TikTok, and Facebook.</p>
+        </div>
+        <div class="prompt-grid">
+            <div class="prompt-card">
+                <div class="prompt-title">The "Self-Care Sunday" Hook</div>
+                <div class="prompt-explanation">Creates a relatable post that encourages followers to book a last-minute Sunday slot.</div>
+                <div class="prompt-content" id="p1">"Write a cozy, high-vibe Instagram caption for 'Self-Care Sunday' focusing on our [SERVICE NAME] at [SPA NAME]. Emphasize why resting is productive and include a call to action to check our last remaining Sunday availability via the link in bio. Tone: Warm, inviting, and premium."<button class="copy-btn" onclick="copyPrompt('p1')">Copy</button></div>
+            </div>
+            <div class="prompt-card">
+                <div class="prompt-title">Client Love Story</div>
+                <div class="prompt-explanation">Turns a basic review into a compelling story-driven post.</div>
+                <div class="prompt-content" id="p2">"Rewrite this client review: '[INSERT REVIEW]' into a compelling 3-part storytelling post for Facebook. Part 1: Emotional hook. Part 2: The transformation. Part 3: Why it matters."<button class="copy-btn" onclick="copyPrompt('p2')">Copy</button></div>
+            </div>
+            <div class="prompt-card">
+                <div class="prompt-title">Educational "Did You Know?" Carousel</div>
+                <div class="prompt-explanation">Generates 5 slides of educational content about a specific wellness topic.</div>
+                <div class="prompt-content" id="p3">"Create a script for a 5-slide Instagram carousel about the benefits of [TREATMENT/INGREDIENT]. Slide 1: Hook slide. Slides 2-4: Key scientific benefits. Slide 5: Save for later & CTA."<button class="copy-btn" onclick="copyPrompt('p3')">Copy</button></div>
+            </div>
+            <div class="prompt-card">
+                <div class="prompt-title">The "Mini-Morning Routine"</div>
+                <div class="prompt-explanation">Offers value by teaching a small wellness tip that builds trust.</div>
+                <div class="prompt-content" id="p4">"Write a short, engaging script for a 30-second TikTok/Reel showing a '3-minute morning wellness ritual' that includes [BRANDED PRODUCT]. Tone: Aesthetic and calm."<button class="copy-btn" onclick="copyPrompt('p4')">Copy</button></div>
+            </div>
+            <div class="prompt-card">
+                <div class="prompt-title">Seasonal Transition Warning</div>
+                <div class="prompt-explanation">Explains why skin or body needs change as seasons shift.</div>
+                <div class="prompt-content" id="p5">"Write an educational post titled 'Why your [SKIN/BODY] is feeling the [SEASON] shift.' Recommend our [SPECIFIC TREATMENT] as the solution."<button class="copy-btn" onclick="copyPrompt('p5')">Copy</button></div>
+            </div>
+            <div class="prompt-card">
+                <div class="prompt-title">Behind-the-Scenes: The Setup</div>
+                <div class="prompt-explanation">Humanizes the brand by showing the care put into preparation.</div>
+                <div class="prompt-content" id="p6">"Write a caption for a video showing the setup of a treatment room. Focus on the lighting, the scent of [SCENT], and the crisp linens. Title: 'The 15 minutes before you arrive.'"<button class="copy-btn" onclick="copyPrompt('p6')">Copy</button></div>
+            </div>
+            <div class="prompt-card">
+                <div class="prompt-title">Myth vs. Reality Checklist</div>
+                <div class="prompt-explanation">Positions you as an expert by debunking common wellness myths.</div>
+                <div class="prompt-content" id="p7">"Create a 'Myth vs. Reality' list for [SPA TOPIC]. Write 3 common misconceptions and provide the expert truth for each."<button class="copy-btn" onclick="copyPrompt('p7')">Copy</button></div>
+            </div>
+            <div class="prompt-card">
+                <div class="prompt-title">The "Waitlist" Urgency</div>
+                <div class="prompt-explanation">Creates FOMO for popular times.</div>
+                <div class="prompt-content" id="p8">"Write an urgent but polite Instagram Story text announcing that we are 95% booked for [HOLIDAY/EVENT]. Join the waitlist now."<button class="copy-btn" onclick="copyPrompt('p8')">Copy</button></div>
+            </div>
+            <div class="prompt-card">
+                <div class="prompt-title">Expert Advice: How to Prep</div>
+                <div class="prompt-explanation">Lowering anxiety by explaining how to prepare for a first visit.</div>
+                <div class="prompt-content" id="p9">"Write a 'First-Timer's Guide' caption for [EXPERIENCE]. Tell them exactly what to expect and how to maximize their results."<button class="copy-btn" onclick="copyPrompt('p9')">Copy</button></div>
+            </div>
+            <div class="prompt-card">
+                <div class="prompt-title">Staff Spotlight: Why We Love It</div>
+                <div class="prompt-explanation">Highlights employee expertise to build personal connection.</div>
+                <div class="prompt-content" id="p10">"Write an interview-style post featuring [STAFF NAME]. Ask: 'What is your favorite treatment to give and why?'" <button class="copy-btn" onclick="copyPrompt('p10')">Copy</button></div>
+            </div>
+            <div class="prompt-card">
+                <div class="prompt-title">Engagement Poll: "This or That"</div>
+                <div class="prompt-explanation">Simple interactive content to boost algorithm ranking.</div>
+                <div class="prompt-content" id="p11">"Generate 5 'This or That' prompts for wellness-themed Instagram Stories (e.g., Hot Stone vs. Deep Tissue)."<button class="copy-btn" onclick="copyPrompt('p11')">Copy</button></div>
+            </div>
+            <div class="prompt-card">
+                <div class="prompt-title">The Wellness "Anti-To-Do" List</div>
+                <div class="prompt-explanation">Content focus on boundaries and mental health.</div>
+                <div class="prompt-content" id="p12">"Create a 'Wellness Anti-To-Do List' for high-achievers. Include things like 'Stop checking emails after 8 PM'."<button class="copy-btn" onclick="copyPrompt('p12')">Copy</button></div>
+            </div>
+            <div class="prompt-card">
+                <div class="prompt-title">Ingredient Deep Dive</div>
+                <div class="prompt-explanation">Sells retail products by educating on specific active ingredients.</div>
+                <div class="prompt-content" id="p13">"Explain the benefits of [INGREDIENT, e.g., Hyaluronic Acid] as if you were a luxury spa therapist. Why do we include it in our [NAME OF FACIAL/PRODUCT]?"<button class="copy-btn" onclick="copyPrompt('p13')">Copy</button></div>
+            </div>
+            <div class="prompt-card">
+                <div class="prompt-title">Quick Tip: Home Care</div>
+                <div class="prompt-explanation">Provides immediate value to lead into a professional service.</div>
+                <div class="prompt-content" id="p14">"Write a caption for a video demonstrating a 1-minute self-massage technique for [PROBLEM, e.g., Jaw Tension]. Mention our [SERVICE] for a deeper release."<button class="copy-btn" onclick="copyPrompt('p14')">Copy</button></div>
+            </div>
+            <div class="prompt-card">
+                <div class="prompt-title">Community Question</div>
+                <div class="prompt-explanation">Prompts followers to comment and share their own rituals.</div>
+                <div class="prompt-content" id="p15">"Write an engaging question: 'How do you transition from work-mode to rest-mode?' Give 3 options and ask for their ritual."<button class="copy-btn" onclick="copyPrompt('p15')">Copy</button></div>
+            </div>
+            <div class="prompt-card">
+                <div class="prompt-title">The "Gift of Time"</div>
+                <div class="prompt-explanation">Sells gift cards without being overly 'salesy'.</div>
+                <div class="prompt-content" id="p16">"Write a sentimental post about why a spa gift card is 'giving someone permission to stop.' Use evocative language."<button class="copy-btn" onclick="copyPrompt('p16')">Copy</button></div>
+            </div>
+            <div class="prompt-card">
+                <div class="prompt-title">Mindfulness Reminder</div>
+                <div class="prompt-explanation">Short, poetic copy for a 'Stop & Breathe' post.</div>
+                <div class="prompt-content" id="p17">"Write a 4-line reflection about the importance of silence. End with: 'Your notification to pause is here. Breathe.'"<button class="copy-btn" onclick="copyPrompt('p17')">Copy</button></div>
+            </div>
+            <div class="prompt-card">
+                <div class="prompt-title">Product "Shelfie" Tips</div>
+                <div class="prompt-explanation">Encourages clients to post their own photos tagging the spa.</div>
+                <div class="prompt-content" id="p18">"Write a fun caption: 'How to style your [BRAND] products for the perfect shelfie.' Ask them to tag us for a repost."<button class="copy-btn" onclick="copyPrompt('p18')">Copy</button></div>
+            </div>
+            <div class="prompt-card">
+                <div class="prompt-title">The "Monthly Intentions"</div>
+                <div class="prompt-explanation">Establishes authority with monthly goals.</div>
+                <div class="prompt-content" id="p19">"Generate a list of 5 'Wellness Intentions' for the month of [MONTH]. Include one physical, one mental, and one spa-related intention."<button class="copy-btn" onclick="copyPrompt('p19')">Copy</button></div>
+            </div>
+            <div class="prompt-card">
+                <div class="prompt-title">Flash Sale: "Happy Hour"</div>
+                <div class="prompt-explanation">Drives traffic to slow mid-week times.</div>
+                <div class="prompt-content" id="p20">"Write an exciting announcement for our 'Mid-Week Wellness Happy Hour.' Offer [DISCOUNT/UPGRADE] for Tuesday/Wednesday bookings."<button class="copy-btn" onclick="copyPrompt('p20')">Copy</button></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2: Spa Marketing & Promotions -->
+    <section id="marketing">
+        <div class="section-header">
+            <span style="font-size: 4rem; color: var(--accent-color); opacity: 0.2;">02</span>
+            <h2>Spa Marketing & Promotions</h2>
+            <p>Email campaigns, SMS marketing, and high-conversion ad copy.</p>
+        </div>
+        <div class="prompt-grid">
+            <div class="prompt-card">
+                <div class="prompt-title">The "Lapsed Client" Re-engagement</div>
+                <div class="prompt-explanation">Brings back clients who haven't visited in 6+ months.</div>
+                <div class="prompt-content" id="p21">"Write a warm 'We miss you' email. Subject: 'A little reminder to breathe...'. Offer a 'Welcome back' gift of [REWARD]." <button class="copy-btn" onclick="copyPrompt('p21')">Copy</button></div>
+            </div>
+            <div class="prompt-card">
+                <div class="prompt-title">New Service Launch</div>
+                <div class="prompt-explanation">Creates excitement for a new treatment.</div>
+                <div class="prompt-content" id="p22">"Create an email sequence for a launch of [SERVICE]. Email 1: The 'Sneak Peek'. Email 2: The 'Open for Bookings' with an intro offer." <button class="copy-btn" onclick="copyPrompt('p22')">Copy</button></div>
+            </div>
+            <div class="prompt-card">
+                <div class="prompt-title">Google Ads Headline Builder</div>
+                <div class="prompt-explanation">Generates 10 high-CTR headlines for local searches.</div>
+                <div class="prompt-content" id="p23">"Generate 10 Google Ads headlines (30 chars max) for a [SPA TYPE] in [LOCATION]. Keywords: Best Massage, Relaxation, Luxury." <button class="copy-btn" onclick="copyPrompt('p23')">Copy</button></div>
+            </div>
+            <div class="prompt-card">
+                <div class="prompt-title">Seasonal Membership Drive (SMS)</div>
+                <div class="prompt-explanation">Short, punchy text for mobile marketing.</div>
+                <div class="prompt-content" id="p24">"Write a 160-character SMS promoting our [SEASON] Membership. Focus on 'Unlimited [SERVICE] for just [PRICE]'. Link CTA." <button class="copy-btn" onclick="copyPrompt('p24')">Copy</button></div>
+            </div>
+            <div class="prompt-card">
+                <div class="prompt-title">Refer a Friend Campaign</div>
+                <div class="prompt-explanation">Encourages word-of-mouth growth.</div>
+                <div class="prompt-content" id="p25">"Write a newsletter section: 'Wellness is better together. Refer a friend and you both get [DISCOUNT/GIFT].'" <button class="copy-btn" onclick="copyPrompt('p25')">Copy</button></div>
+            </div>
+            <div class="prompt-card">
+                <div class="prompt-title">Birthday Month Special</div>
+                <div class="prompt-explanation">Automated email for a client’s special day.</div>
+                <div class="prompt-content" id="p26">"Write a celebratory Birthday email. Subject: 'A little something for your special day...'. Offer a complimentary [ADD-ON]." <button class="copy-btn" onclick="copyPrompt('p26')">Copy</button></div>
+            </div>
+            <div class="prompt-card">
+                <div class="prompt-title">VIP Exclusive Offer</div>
+                <div class="prompt-explanation">Reward top 10% spenders with a premium feel.</div>
+                <div class="prompt-content" id="p27">"Write a high-end email for VIP clients. Offer them first access to [PRIVATE EVENT/LIMITED SLOT]. Tone: Sophisticated and elite." <button class="copy-btn" onclick="copyPrompt('p27')">Copy</button></div>
+            </div>
+            <div class="prompt-card">
+                <div class="prompt-title">Holiday Gift Guide Bundle</div>
+                <div class="prompt-explanation">Bundles services and retail for easy gifting.</div>
+                <div class="prompt-content" id="p28">"Create 3 themed 'Holiday Bundles' (e.g., The Sleep Ritual). For each, list inclusions (1 service + 2 products) and a catchy name." <button class="copy-btn" onclick="copyPrompt('p28')">Copy</button></div>
+            </div>
+            <div class="prompt-card">
+                <div class="prompt-title">Last Minute Openings Solution</div>
+                <div class="prompt-explanation">Quickly fills gaps in the schedule.</div>
+                <div class="prompt-content" id="p29">"Write a social post and SMS for 'Last Minute Openings tomorrow!'. Offer a 'Lucky Last Slot' discount for [TIME] for [SERVICE]." <button class="copy-btn" onclick="copyPrompt('p29')">Copy</button></div>
+            </div>
+            <div class="prompt-card">
+                <div class="prompt-title">Google Review Request</div>
+                <div class="prompt-explanation">Gently asks for a 5-star review via post-visit follow-up.</div>
+                <div class="prompt-content" id="p30">"Write a post-visit review request: 'We hope you're still glowing. If you enjoyed your time with [STAFF NAME], please share your experience with a review!'" <button class="copy-btn" onclick="copyPrompt('p30')">Copy</button></div>
+            </div>
+            <div class="prompt-card">
+                <div class="prompt-title">Facebook Ad: Corporate Wellness</div>
+                <div class="prompt-explanation">Targets B2B and business owners.</div>
+                <div class="prompt-content" id="p31">"Write a Facebook Ad targeting HR managers in [LOCATION]. Topic: 'A rested team is a high-performing team.' Pitch our Corporate Spa Days." <button class="copy-btn" onclick="copyPrompt('p31')">Copy</button></div>
+            </div>
+            <div class="prompt-card">
+                <div class="prompt-title">The "Retail Blowout"</div>
+                <div class="prompt-explanation">Helps move products that are overstocked.</div>
+                <div class="prompt-content" id="p32">"Write a high-energy email for an 'End of Season Retail Clearout.' Offer 'Buy 2, Get 1 Free' or 'X% Off' select brands." <button class="copy-btn" onclick="copyPrompt('p32')">Copy</button></div>
+            </div>
+            <div class="prompt-card">
+                <div class="prompt-title">Collaborative Event Teaser</div>
+                <div class="prompt-explanation">For partnerships with yoga studios or cafes.</div>
+                <div class="prompt-content" id="p33">"Write a teaser post for our upcoming partnership with [PARTNER NAME]. Mention the date and the fusion of [THEIR SERVICE] and [OUR SERVICE]." <button class="copy-btn" onclick="copyPrompt('p33')">Copy</button></div>
+            </div>
+            <div class="prompt-card">
+                <div class="prompt-title">"Treatment of the Month" Focus</div>
+                <div class="prompt-explanation">Deep dive into one service to drive its specific ROI.</div>
+                <div class="prompt-content" id="p34">"Create a detailed newsletter feature for our 'Treatment of the Month': [SERVICE]. Include Who it's for, the science, and a 'Member Only' upgrade." <button class="copy-btn" onclick="copyPrompt('p34')">Copy</button></div>
+            </div>
+            <div class="prompt-card">
+                <div class="prompt-title">New Year, New Ritual</div>
+                <div class="prompt-explanation">Capitalizes on January resolutions.</div>
+                <div class="prompt-content" id="p35">"Write a New Year campaign pitch centered on 'New Year, New Ritual.' Sell a 3-month package aimed at consistency." <button class="copy-btn" onclick="copyPrompt('p35')">Copy</button></div>
+            </div>
+            <div class="prompt-card">
+                <div class="prompt-title">Wedding/Bridal Party Outreach</div>
+                <div class="prompt-explanation">High-value bookings for wedding seasons.</div>
+                <div class="prompt-content" id="p36">"Write a landing page copy section for 'The Bridal Glow Collective.' Pitch pre-wedding stress relief for the bride and bridesmaids." <button class="copy-btn" onclick="copyPrompt('p36')">Copy</button></div>
+            </div>
+            <div class="prompt-card">
+                <div class="prompt-title">Abandonment Cart Follow-up</div>
+                <div class="prompt-explanation">Recovers lost retail sales online.</div>
+                <div class="prompt-content" id="p37">"Write a cheeky cart abandonment email. 'Did you forget your glow?' Mention the [PRODUCT] they left behind and offer a 10% code." <button class="copy-btn" onclick="copyPrompt('p37')">Copy</button></div>
+            </div>
+            <div class="prompt-card">
+                <div class="prompt-title">Seasonal Self-Care Checklist</div>
+                <div class="prompt-explanation">Lead magnet to grow your email list.</div>
+                <div class="prompt-content" id="p38">"Generate a 10-item 'Spring Cleaning for the Soul' checklist that includes 1-2 spa visits. Perfect as a lead magnet PDF." <button class="copy-btn" onclick="copyPrompt('p38')">Copy</button></div>
+            </div>
+            <div class="prompt-card">
+                <div class="prompt-title">Waitlist to VIP Conversion</div>
+                <div class="prompt-explanation">Converts people who missed out into future bookings.</div>
+                <div class="prompt-content" id="p39">"Write an email for people who missed a slot on the waitlist. Offer 'Priority Booking Access' for next week before it opens to the public." <button class="copy-btn" onclick="copyPrompt('p39')">Copy</button></div>
+            </div>
+            <div class="prompt-card">
+                <div class="prompt-title">Annual Pass ROI Breakdown</div>
+                <div class="prompt-explanation">Sells high-ticket annual memberships.</div>
+                <div class="prompt-content" id="p40">"Create a 'Math of Wellness' breakdown comparing 12 separate visits vs. the price of our Annual Pass. Show the savings of [AMOUNT]." <button class="copy-btn" onclick="copyPrompt('p40')">Copy</button></div>
+            </div>
+        </div>
+    </section>
+    <!-- Section 3: Client Experience & Customer Journey -->
+    <section id="experience">
+        <div class="section-header">
+            <span style="font-size: 4rem; color: var(--accent-color); opacity: 0.2;">03</span>
+            <h2>Client Experience & Customer Journey</h2>
+            <p>From the first click to the post-visit glow.</p>
+        </div>
+        <div class="prompt-grid">
+            <div class="prompt-card">
+                <div class="prompt-title">Personalized Booking Confirmation</div>
+                <div class="prompt-explanation">Reduces no-shows and builds anticipation.</div>
+                <div class="prompt-content" id="p41">"Write a warm, personalized booking confirmation email for [CLIENT NAME] booking a [SERVICE]. Include a 'Preparing for your visit' section with 2 tips (e.g., hydration, arrival time)." <button class="copy-btn" onclick="copyPrompt('p41')">Copy</button></div>
+            </div>
+            <div class="prompt-card">
+                <div class="prompt-title">Post-Treatment Care Instructions</div>
+                <div class="prompt-explanation">Extends the value of the service into the client's home.</div>
+                <div class="prompt-content" id="p42">"Write a post-care email for a [SPECIFIC MASSAGE/FACIAL]. Explain why they might feel [SENSATIONS] and list 3 'Do's and Don'ts' for the next 24 hours." <button class="copy-btn" onclick="copyPrompt('p42')">Copy</button></div>
+            </div>
+            <div class="prompt-card">
+                <div class="prompt-title">The "Welcome Back" Surprise</div>
+                <div class="prompt-explanation">A script for staff to use when a regular client arrives.</div>
+                <div class="prompt-content" id="p43">"Write a non-cheesy 'Welcome Back' script for a front desk team to use for a client who has visited 5+ times. Acknowledge their loyalty without sounding robotic." <button class="copy-btn" onclick="copyPrompt('p43')">Copy</button></div>
+            </div>
+            <div class="prompt-card">
+                <div class="prompt-title">Loyalty Program Milestone Email</div>
+                <div class="prompt-explanation">Celebrates the client's journey with your spa.</div>
+                <div class="prompt-content" id="p44">"Write an email to a client who just reached 'Gold Status' (or [MILESTONE]). Explain their new perks and thank them for being part of the [SPA NAME] family." <button class="copy-btn" onclick="copyPrompt('p44')">Copy</button></div>
+            </div>
+            <div class="prompt-card">
+                <div class="prompt-title">Handling a Negative Experience (Recovery)</div>
+                <div class="prompt-explanation">Professional outreach to turn a bad review into a loyal fan.</div>
+                <div class="prompt-content" id="p45">"Draft a compassionate response to a client who had a sub-par experience. Apologize sincerely, ask for a private call, and offer a [GIFT/REDO] to make it right." <button class="copy-btn" onclick="copyPrompt('p45')">Copy</button></div>
+            </div>
+            <div class="prompt-card">
+                <div class="prompt-title">Pre-Visit Wellness Questionnaire</div>
+                <div class="prompt-explanation">Gathers data to personalize the treatment.</div>
+                <div class="prompt-content" id="p46">"Create a 5-question digital intake form for a [SPA SERVICE]. Focus on mood, areas of tension, and desired outcome (e.g., 'Do you want to leave feeling energized or sleepy?')." <button class="copy-btn" onclick="copyPrompt('p46')">Copy</button></div>
+            </div>
+            <div class="prompt-card">
+                <div class="prompt-title">Thoughtful Anniversary Celebration</div>
+                <div class="prompt-explanation">Celebrates the anniversary of their first visit.</div>
+                <div class="prompt-content" id="p47">"Write an email: 'It's been a year since your first visit to [SPA NAME]!' Include a retrospective on their wellness journey and a special 'Anniversary Gift'." <button class="copy-btn" onclick="copyPrompt('p47')">Copy</button></div>
+            </div>
+            <div class="prompt-card">
+                <div class="prompt-title">Post-Facial "Glow Check" SMS</div>
+                <div class="prompt-explanation">A quick touchpoint 48 hours after a service.</div>
+                <div class="prompt-content" id="p48">"Write a short SMS text: 'Hey [NAME], just checking in on your skin 48 hours after your [FACIAL]. How are you glowing today?' Include a link to our post-care blog." <button class="copy-btn" onclick="copyPrompt('p48')">Copy</button></div>
+            </div>
+            <div class="prompt-card">
+                <div class="prompt-title">The "Referral Thank You" Note</div>
+                <div class="prompt-explanation">Rewards the advocate, not just the new client.</div>
+                <div class="prompt-content" id="p49">"Write a 'Thank You' email to a client who referred someone. 'We love our community, and we're so glad you shared us with [REFERRED NAME]. Here is a credit to your account!'" <button class="copy-btn" onclick="copyPrompt('p49')">Copy</button></div>
+            </div>
+            <div class="prompt-card">
+                <div class="prompt-title">Wait Time "Mindfulness" Cards</div>
+                <div class="prompt-explanation">Content for small cards in the relaxation lounge.</div>
+                <div class="prompt-content" id="p50">"Write 3 short 'Mindfulness Prompts' for clients to read while they wait for their session. Example: 'Notice 3 things you can smell right now...'" <button class="copy-btn" onclick="copyPrompt('p50')">Copy</button></div>
+            </div>
+            <div class="prompt-card">
+                <div class="prompt-title">Staff Introduction Bio (Warm)</div>
+                <div class="prompt-explanation">Introduces a therapist to a new client before they meet.</div>
+                <div class="prompt-content" id="p51">"Write a 3-sentence 'Meet your therapist' bio for [STAFF NAME]. Highlight their expertise in [MODALITY] and their personal wellness philosophy." <button class="copy-btn" onclick="copyPrompt('p51')">Copy</button></div>
+            </div>
+            <div class="prompt-card">
+                <div class="prompt-title">Seasonal Wardrobe/Prep Advice</div>
+                <div class="prompt-explanation">Practical tips for a better spa day.</div>
+                <div class="prompt-content" id="p52">"Write a quick guide for clients visiting in [WINTER/SUMMER]. Advice on what to wear (robes/sandals) and how to protect their skin/body post-visit." <button class="copy-btn" onclick="copyPrompt('p52')">Copy</button></div>
+            </div>
+            <div class="prompt-card">
+                <div class="prompt-title">The "In-Between Sessions" Check-in</div>
+                <div class="prompt-explanation">Maintains the relationship between monthly visits.</div>
+                <div class="prompt-content" id="p53">"Write a 'Mid-Month Wellness Check-in' email. Just pure value—no sales. share a 2-minute stretching video or a quick breathing prompt." <button class="copy-btn" onclick="copyPrompt('p53')">Copy</button></div>
+            </div>
+            <div class="prompt-card">
+                <div class="prompt-title">Personalized Retail Recommendation</div>
+                <div class="prompt-explanation">Follow-up on a product mentioned during a session.</div>
+                <div class="prompt-content" id="p54">"Write an email: 'Following up on our chat today...' Mention the [PRODUCT] you discussed during the treatment and why it's perfect for their [SKIN/BODY CONCERN]." <button class="copy-btn" onclick="copyPrompt('p54')">Copy</button></div>
+            </div>
+            <div class="prompt-card">
+                <div class="prompt-title">"EndOfVisit" Ritual Script</div>
+                <div class="prompt-explanation">Ensures the client leaves on a high note.</div>
+                <div class="prompt-content" id="p55">"Draft a 2-sentence closing script for a therapist to use at the end of a session. It should include a 'Prescription' for home care and a genuine thank you." <button class="copy-btn" onclick="copyPrompt('p55')">Copy</button></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: Spa Services & Menu Descriptions -->
+    <section id="menu">
+        <div class="section-header">
+            <span style="font-size: 4rem; color: var(--accent-color); opacity: 0.2;">04</span>
+            <h2>Spa Services & Menu Descriptions</h2>
+            <p>Words that sell relaxation and results.</p>
+        </div>
+        <div class="prompt-grid">
+            <div class="prompt-card">
+                <div class="prompt-title">Irresistible Massage Description</div>
+                <div class="prompt-explanation">Elevates a standard massage into a sensory experience.</div>
+                <div class="prompt-content" id="p56">"Rewrite the description for our [MASSAGE TYPE]. Instead of listing techniques, focus on the sensory experience: the heat, the pressure, and the feeling of weightlessness." <button class="copy-btn" onclick="copyPrompt('p56')">Copy</button></div>
+            </div>
+            <div class="prompt-card">
+                <div class="prompt-title">The "High-Tech" Facial Pitch</div>
+                <div class="prompt-explanation">Explains advanced skincare in simple, luxurious terms.</div>
+                <div class="prompt-content" id="p57">"Describe our [MACHINE/FACIAL TYPE, e.g., HydraFacial]. Explain the science simply but make it sound like a total reset for the skin. Focus on 'Instant Glow'." <button class="copy-btn" onclick="copyPrompt('p57')">Copy</button></div>
+            </div>
+            <div class="prompt-card">
+                <div class="prompt-title">Signature Ritual Storytelling</div>
+                <div class="prompt-explanation">Turns a package of services into a cohesive story.</div>
+                <div class="prompt-content" id="p58">"Write a 150-word story-driven description for our [SIGNATURE RITUAL]. Take the reader on a journey from 'Stressed Executive' to 'Deep Inner Calm'." <button class="copy-btn" onclick="copyPrompt('p58')">Copy</button></div>
+            </div>
+            <div class="prompt-card">
+                <div class="prompt-title">Mens-Specific Service Copy</div>
+                <div class="prompt-explanation">Speaks directly to the male demographic.</div>
+                <div class="prompt-content" id="p59">"Write a description for our 'Mens Reset' session. Avoid typical 'flowery' language; focus on performance, recovery, and precision." <button class="copy-btn" onclick="copyPrompt('p59')">Copy</button></div>
+            </div>
+            <div class="prompt-card">
+                <div class="prompt-title">The "Add-on" Upsell Description</div>
+                <div class="prompt-explanation">Makes small additions sound essential.</div>
+                <div class="prompt-content" id="p60">"Write 3 short descriptions for 'Enhancments' (e.g., Aromatherapy, Scalp Massage, Eye Mask). Make them sound like the missing piece of the puzzle." <button class="copy-btn" onclick="copyPrompt('p60')">Copy</button></div>
+            </div>
+            <div class="prompt-card">
+                <div class="prompt-title">Prenatal/Maternity Care Copy</div>
+                <div class="prompt-explanation">Builds trust with expectant mothers.</div>
+                <div class="prompt-content" id="p61">"Write a gentle, reassuring description for our [PRENATAL SERVICE]. Emphasize safety, comfort, and the importance of self-care during this transition." <button class="copy-btn" onclick="copyPrompt('p61')">Copy</button></div>
+            </div>
+            <div class="prompt-card">
+                <div class="prompt-title">The "Lunch Break" Service Pitch</div>
+                <div class="prompt-explanation">Targets busy professionals looking for a quick fix.</div>
+                <div class="prompt-content" id="p62">"Write a pitch for our '30-minute Express [SERVICE]'. Focus on efficiency—'Maximum results, minimum time.' Perfect for the mid-day reset." <button class="copy-btn" onclick="copyPrompt('p62')">Copy</button></div>
+            </div>
+            <div class="prompt-card">
+                <div class="prompt-title">Hydrotherapy/Sauna Circuit Guide</div>
+                <div class="prompt-explanation">Explains the "Why" behind the heat.</div>
+                <div class="prompt-content" id="p63">"Write a guide for our 'Thermal Suite'. Explain the benefits of switching between hot and cold cycles. Use the term 'Internal Detox'." <button class="copy-btn" onclick="copyPrompt('p63')">Copy</button></div>
+            </div>
+            <div class="prompt-card">
+                <div class="prompt-title">Group/Party Package Descriptions</div>
+                <div class="prompt-explanation">Sells the "togetherness" aspect.</div>
+                <div class="prompt-content" id="p64">"Write a fun, social description for our 'Wellness Party Pack' (e.g., for Bachelorettes or Birthdays). Focus on shared memories and exclusive lounge access." <button class="copy-btn" onclick="copyPrompt('p64')">Copy</button></div>
+            </div>
+            <div class="prompt-card">
+                <div class="prompt-title">Holistic/Energy Healing Copy</div>
+                <div class="prompt-explanation">Speaks to people looking for deeper work (Reiki, Sound, etc.).</div>
+                <div class="prompt-content" id="p65">"Write a soulful description for our [ENERGY SERVICE]. Use words like 'Alignment', 'Frequency', and 'Balance'. Explain clearly what 'Energy Work' actually feels like." <button class="copy-btn" onclick="copyPrompt('p65')">Copy</button></div>
+            </div>
+            <div class="prompt-card">
+                <div class="prompt-title">The "First Timer" Package Pitch</div>
+                <div class="prompt-explanation">Removes the barrier to entry for spa newbies.</div>
+                <div class="prompt-content" id="p66">"Create an 'Intro to Wellness' package description. Include one massage, one facial, and a take-home gift. Make it feel like the perfect starting point." <button class="copy-btn" onclick="copyPrompt('p66')">Copy</button></div>
+            </div>
+            <div class="prompt-card">
+                <div class="prompt-title">Detox/Body Scrub Description</div>
+                <div class="prompt-explanation">Focuses on texture and renewal.</div>
+                <div class="prompt-content" id="p67">"Write a sensory-heavy description for our [BODY SCRUB/WRAP]. Focus on the scent of [SCENT] and the physical sensation of renewal. Title: 'The Ultimate Shedding Ritual'." <button class="copy-btn" onclick="copyPrompt('p67')">Copy</button></div>
+            </div>
+            <div class="prompt-card">
+                <div class="prompt-title">CBD/Trending Ingredient Service Copy</div>
+                <div class="prompt-explanation">Leverages market trends.</div>
+                <div class="prompt-content" id="p68">"Explain why we've added [TRENDING INGREDIENT, e.g., CBD] to our treatments. Focus on anti-inflammatory benefits and deeper muscle relaxation." <button class="copy-btn" onclick="copyPrompt('p68')">Copy</button></div>
+            </div>
+            <div class="prompt-card">
+                <div class="prompt-title">Member-Only Treatment Upgrades</div>
+                <div class="prompt-explanation">Exclusive perks that make membership worth it.</div>
+                <div class="prompt-content" id="p69">"Describe 3 'Member Only' upgrades that aren't available on the regular menu. Make them sound rare and highly effective." <button class="copy-btn" onclick="copyPrompt('p69')">Copy</button></div>
+            </div>
+            <div class="prompt-card">
+                <div class="prompt-title">The "Gift Voucher" Menu</div>
+                <div class="prompt-explanation">Simplifies choices for gift-givers.</div>
+                <div class="prompt-content" id="p70">"Write descriptions for 3 'Ready-to-Gift' Vouchers: 'The Total Escape', 'The Glow Getter', and 'The Stress Melter'. include a 2-sentence summary for each." <button class="copy-btn" onclick="copyPrompt('p70')">Copy</button></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 5: Wellness Content Creation -->
+    <section id="wellness">
+        <div class="section-header">
+            <span style="font-size: 4rem; color: var(--accent-color); opacity: 0.2;">05</span>
+            <h2>Wellness Content Creation</h2>
+            <p>Educate, inspire, and establish authority.</p>
+        </div>
+        <div class="prompt-grid">
+            <div class="prompt-card">
+                <div class="prompt-title">The "Morning Mindfulness" Blog</div>
+                <div class="prompt-explanation">A 500-word blog post about starting the day right.</div>
+                <div class="prompt-content" id="p71">"Write a 500-word blog post titled '5 Morning Rituals to Transform Your Day.' Tone: Calm, authoritative, and encouraging. Plug our [SPA NAME] at the end." <button class="copy-btn" onclick="copyPrompt('p71')">Copy</button></div>
+            </div>
+            <div class="prompt-card">
+                <div class="prompt-title">Deep Dive: Science of [STRESS/SKIN]</div>
+                <div class="prompt-explanation">Explains a complex topic in an accessible way.</div>
+                <div class="prompt-content" id="p72">"Explain the link between stress and [SKIN/BODY CONDITION] for our newsletter. Use simple analogies and suggest 2 of our services as part of the solution." <button class="copy-btn" onclick="copyPrompt('p72')">Copy</button></div>
+            </div>
+            <div class="prompt-card">
+                <div class="prompt-title">Home Spa "Ritual Guide"</div>
+                <div class="prompt-explanation">Teaches clients how to use your products at home.</div>
+                <div class="prompt-content" id="p73">"Create a 7-step guide for 'The Ultimate Home Spa Night' using [PRODUCT BRAND]. Make it sound like a ritual, not just a routine." <button class="copy-btn" onclick="copyPrompt('p73')">Copy</button></div>
+            </div>
+            <div class="prompt-card">
+                <div class="prompt-title">Wellness Glossary: [TERM] Explained</div>
+                <div class="prompt-explanation">Content focus on educating about industry terms.</div>
+                <div class="prompt-content" id="p74">"Define [TERM, e.g., Gua Sha] for a beginner. What is it, why does it work, and how can they experience it at [SPA NAME]?" <button class="copy-btn" onclick="copyPrompt('p74')">Copy</button></div>
+            </div>
+            <div class="prompt-card">
+                <div class="prompt-title">The "Season of Renewal" Feature</div>
+                <div class="prompt-explanation">Great for quarterly newsletters.</div>
+                <div class="prompt-content" id="p75">"Write a lead article for our [SEASON] newsletter. Topic: 'Shedding the [PREVIOUS SEASON] and embracing the [CURRENT SEASON].' Include 3 wellness tips." <button class="copy-btn" onclick="copyPrompt('p75')">Copy</button></div>
+            </div>
+            <div class="prompt-card">
+                <div class="prompt-title">Guided Breathing Script (Written)</div>
+                <div class="prompt-explanation">Value-add content for emails or social.</div>
+                <div class="prompt-content" id="p76">"Write a 1-minute guided breathing script that focus on [INTENTION, e.g., releasing shoulder tension]. Use 'Inhale for 4, Hold for 4' style." <button class="copy-btn" onclick="copyPrompt('p76')">Copy</button></div>
+            </div>
+            <div class="prompt-card">
+                <div class="prompt-title">Interview with the Founder</div>
+                <div class="prompt-explanation">Humanizes the brand and shares its values.</div>
+                <div class="prompt-content" id="p77">"Generate 10 interview questions for a spa founder to answer. Focus on why they started the business and what 'Wellness' means to them." <button class="copy-btn" onclick="copyPrompt('p77')">Copy</button></div>
+            </div>
+            <div class="prompt-card">
+                <div class="prompt-title">The "Beauty from Within" Guide</div>
+                <div class="prompt-explanation">Focuses on nutrition and hydration.</div>
+                <div class="prompt-content" id="p78">"Write a short guide on 5 foods that support [SKIN GOAL, e.g., Collagen production]. Partner this advice with our [FACIAL NAME]." <button class="copy-btn" onclick="copyPrompt('p78')">Copy</button></div>
+            </div>
+            <div class="prompt-card">
+                <div class="prompt-title">Sleep Sanctuary: Home Tips</div>
+                <div class="prompt-explanation">Highly relevant topic for stressed clients.</div>
+                <div class="prompt-content" id="p79">"Write a blog post: 'How to Build a Sleep Sanctuary: The Spa-Inspired Bedroom.' Focus on scents, textures, and evening rituals." <button class="copy-btn" onclick="copyPrompt('p79')">Copy</button></div>
+            </div>
+            <div class="prompt-card">
+                <div class="prompt-title">The "Gentle Movement" Recommendation</div>
+                <div class="prompt-explanation">Promotes an holistic approach.</div>
+                <div class="prompt-content" id="p80">"Write a newsletter section titled 'Moving with Intention.' Recommend 3 types of gentle movement (e.g., Yin Yoga) that complement a [SERVICE] visit." <button class="copy-btn" onclick="copyPrompt('p80')">Copy</button></div>
+            </div>
+            <div class="prompt-card">
+                <div class="prompt-title">Holiday Stress Management Piece</div>
+                <div class="prompt-explanation">Perfect for the end-of-year rush.</div>
+                <div class="prompt-content" id="p81">"Write a guide: 'The Un-Stressed Guest: 5 Ways to Stay Balanced During the Holidays.' Promote our gift vouchers as the perfect low-stress gift." <button class="copy-btn" onclick="copyPrompt('p81')">Copy</button></div>
+            </div>
+            <div class="prompt-card">
+                <div class="prompt-title">The "Benefits of Silence" Reflection</div>
+                <div class="prompt-explanation">Focuses on mental health and quiet.</div>
+                <div class="prompt-content" id="p82">"Write a 300-word reflection on 'The Luxury of Silence.' Why our 'Quiet Zone' is the most popular part of our spa." <button class="copy-btn" onclick="copyPrompt('p82')">Copy</button></div>
+            </div>
+            <div class="prompt-card">
+                <div class="prompt-title">Client Case Study (Anonymous)</div>
+                <div class="prompt-explanation">Shows real results without breaking privacy.</div>
+                <div class="prompt-content" id="p83">"Draft a case study show-casing the results of a 6-month [TREATMENT] journey. Focus on 'Before' (pain/dullness) and 'After' (balance/glow)." <button class="copy-btn" onclick="copyPrompt('p83')">Copy</button></div>
+            </div>
+            <div class="prompt-card">
+                <div class="prompt-title">The "Active Aging" Guide</div>
+                <div class="prompt-explanation">Focuses on skincare and mobility for older clients.</div>
+                <div class="prompt-content" id="p84">"Write a guide titled 'Graceful Resilience: A Guide to Active Aging.' Focus on skin elasticity and joint health. Plug our [SERVICE]." <button class="copy-btn" onclick="copyPrompt('p84')">Copy</button></div>
+            </div>
+            <div class="prompt-card">
+                <div class="prompt-title">Digital Detox Challenge</div>
+                <div class="prompt-explanation">Engages clients in a community wellness activity.</div>
+                <div class="prompt-content" id="p85">"Create a '7-Day Digital Detox Challenge' for our social media. Day 1-7 tasks (e.g., no phone after 9 PM). Offer a prize for completion." <button class="copy-btn" onclick="copyPrompt('p85')">Copy</button></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 6: Spa Business Strategy -->
+    <section id="business">
+        <div class="section-header">
+            <span style="font-size: 4rem; color: var(--accent-color); opacity: 0.2;">06</span>
+            <h2>Spa Business Strategy</h2>
+            <p>Scaling, efficiency, and visionary leadership.</p>
+        </div>
+        <div class="prompt-grid">
+            <div class="prompt-card">
+                <div class="prompt-title">The "Menu Audit" Strategic Review</div>
+                <div class="prompt-explanation">Helps identify low-profit services.</div>
+                <div class="prompt-content" id="p86">"Act as a spa business consultant. Analyze my menu prices vs. cost of goods (COGS) [INSERT LIST]. Which 3 services should I promote most for highest ROI?" <button class="copy-btn" onclick="copyPrompt('p86')">Copy</button></div>
+            </div>
+            <div class="prompt-card">
+                <div class="prompt-title">Staff Incentive Program Designer</div>
+                <div class="prompt-explanation">Creates a plan to boost retail sales.</div>
+                <div class="prompt-content" id="p87">"Design a 'Retail Champion' incentive program for my therapist team. It should focus on rewards like [PRICES] for reaching [RETAIL TARGETS]." <button class="copy-btn" onclick="copyPrompt('p87')">Copy</button></div>
+            </div>
+            <div class="prompt-card">
+                <div class="prompt-title">Competitive Analysis Script</div>
+                <div class="prompt-explanation">Researches and compares your spa to local competitors.</div>
+                <div class="prompt-content" id="p88">"I am in [LOCATION]. List the top 5 'Wellness Trends' currently popular in this area and explain how I can adapt my [SPA TYPE] to stay ahead." <button class="copy-btn" onclick="copyPrompt('p88')">Copy</button></div>
+            </div>
+            <div class="prompt-card">
+                <div class="prompt-title">The "Standard Operating Procedure" (SOP) Builder</div>
+                <div class="prompt-explanation">Standardizes the arrival experience.</div>
+                <div class="prompt-content" id="p89">"Write a 10-step SOP for the 'Perfect Client Arrival.' From the first smile to the handed robe. Ensure it reflects a [LUXURY/BOUTIQUE] vibe." <button class="copy-btn" onclick="copyPrompt('p89')">Copy</button></div>
+            </div>
+            <div class="prompt-card">
+                <div class="prompt-title">Mission Statement Refiner</div>
+                <div class="prompt-explanation">Polishes your core brand message.</div>
+                <div class="prompt-content" id="p90">"Refine my spa's mission statement: '[INSERT DRAFT]'. Make it sound more professional, inspiring, and unique to the [NICHE] market." <button class="copy-btn" onclick="copyPrompt('p90')">Copy</button></div>
+            </div>
+            <div class="prompt-card">
+                <div class="prompt-title">Staff Meeting Agenda: Client Retention</div>
+                <div class="prompt-explanation">Focuses the team on key metrics.</div>
+                <div class="prompt-content" id="p91">"Create a 30-minute staff meeting agenda focused entirely on 'Increasing Re-booking Rates.' Include a 'Roleplay' section for the end of a treatment." <button class="copy-btn" onclick="copyPrompt('p91')">Copy</button></div>
+            </div>
+            <div class="prompt-card">
+                <div class="prompt-title">The "Expansion Feasibility" Model</div>
+                <div class="prompt-explanation">Think-through the cost of adding a new room/feature.</div>
+                <div class="prompt-content" id="p92">"What are the 5 biggest financial and operational risks of adding a [NEW SERVICE/ROOM] to my existing spa? Give me a checklist to evaluate feasibility." <button class="copy-btn" onclick="copyPrompt('p92')">Copy</button></div>
+            </div>
+            <div class="prompt-card">
+                <div class="prompt-title">Local SEO Optimization Script</div>
+                <div class="prompt-explanation">Improves your 'Google My Business' ranking.</div>
+                <div class="prompt-content" id="p93">"Optimize my Google Business Profile 'About' section for the keywords: [KEYWORD 1, 2, 3]. Make it compelling for someone searching in [LOCATION]." <button class="copy-btn" onclick="copyPrompt('p93')">Copy</button></div>
+            </div>
+            <div class="prompt-card">
+                <div class="prompt-title">Waste Reduction/Sustainability Plan</div>
+                <div class="prompt-explanation">Audits your backbar for eco-efficiency.</div>
+                <div class="prompt-content" id="p94">"How can a spa of my size ([X] rooms) reduce water waste and single-use plastic? Give me 5 practical, cost-effective swaps." <button class="copy-btn" onclick="copyPrompt('p94')">Copy</button></div>
+            </div>
+            <div class="prompt-card">
+                <div class="prompt-title">The "Recruitment" Hook (Hiring)</div>
+                <div class="prompt-explanation">Attracts top-tier therapists.</div>
+                <div class="prompt-content" id="p95">"Write a job post for a [ROLE, e.g., Head Esthetician]. Focus on the culture, the continuing education, and the benefits. Make it stand out from typical job boards." <button class="copy-btn" onclick="copyPrompt('p95')">Copy</button></div>
+            </div>
+            <div class="prompt-card">
+                <div class="prompt-title">Crisis Communication Template</div>
+                <div class="prompt-explanation">For power outages, floods, or unexpected closures.</div>
+                <div class="prompt-content" id="p96">"Draft an urgent email and social post for an 'Unexpected Closure' due to [REASON]. Focus on rescheduling quickly and offering a [SMALL CONCESSION] for the hassle." <button class="copy-btn" onclick="copyPrompt('p96')">Copy</button></div>
+            </div>
+            <div class="prompt-card">
+                <div class="prompt-title">The "Retail-to-Service" Ratio Optimizer</div>
+                <div class="prompt-explanation">Consults on how to sell more product.</div>
+                <div class="prompt-content" id="p97">"Give me 5 'Natural Selling' scripts for therapists to use when recommending a product at the end of a [SERVICE NAME]." <button class="copy-btn" onclick="copyPrompt('p97')">Copy</button></div>
+            </div>
+            <div class="prompt-card">
+                <div class="prompt-title">Partnership Outreach Email</div>
+                <div class="prompt-explanation">Connects with local hotels or gyms.</div>
+                <div class="prompt-content" id="p98">"Write a professional outreach email to a manager at [PARTNER NAME]. Pitch a mutually beneficial referral program or exclusive 'Guest Perk' deal." <button class="copy-btn" onclick="copyPrompt('p98')">Copy</button></div>
+            </div>
+            <div class="prompt-card">
+                <div class="prompt-title">Year-End Business Review (Self)</div>
+                <div class="prompt-explanation">Questions to ask yourself to plan for the next year.</div>
+                <div class="prompt-content" id="p99">"Generate 10 'Critical Thinking' questions for a spa owner's end-of-year review. Focus on profit, team morale, and brand reputation." <button class="copy-btn" onclick="copyPrompt('p99')">Copy</button></div>
+            </div>
+            <div class="prompt-card">
+                <div class="prompt-title">The "Vision 2030" Strategy</div>
+                <div class="prompt-explanation">Thinking ahead for long-term growth.</div>
+                <div class="prompt-content" id="p100">"Where is the 'Spa & Wellness' industry heading in the next 5 years? List 3 emerging technologies I should keep an eye on to future-proof my business." <button class="copy-btn" onclick="copyPrompt('p100')">Copy</button></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section: Bonus Power Prompts -->
+    <section id="bonus">
+        <div class="section-header">
+            <h2>Bonus: 10 Customizable Power Prompts</h2>
+            <p>Using placeholders for maximum flexibility.</p>
+        </div>
+        <div class="prompt-grid">
+            <div class="prompt-card" style="border: 2px solid var(--accent-color);">
+                <div class="prompt-title">The "Irresistible Offer" Engine</div>
+                <div class="prompt-content">"Create a 3-tier promotional offer for my <strong>[SPA TYPE]</strong> in <strong>[LOCATION]</strong>. Target Audience: <strong>[TARGET AUDIENCE]</strong>. Focus on our <strong>[SERVICE]</strong>. For each tier, include a name, what's included, and the 'Hook' that makes them book today."</div>
+            </div>
+            <div class="prompt-card" style="border: 2px solid var(--accent-color);">
+                <div class="prompt-title">The "Storyteller" Content Creator</div>
+                <div class="prompt-content">"Write a series of 5 Instagram captions for a <strong>[SPA TYPE]</strong>. Use a <strong>[TONE]</strong> voice. Focus on the emotional benefits of <strong>[SERVICE]</strong> for <strong>[TARGET AUDIENCE]</strong>. Use the 'Problem-Agitation-Solution' framework."</div>
+            </div>
+            <!-- Power Prompt 4 -->
+            <div class="prompt-card" style="border: 2px solid var(--accent-color);">
+                <div class="prompt-title">The "Local Authority" Press Release</div>
+                <div class="prompt-content">"Write a professional press release for <strong>[SPA NAME]</strong> announcing our new <strong>[SERVICE/EVENT]</strong> in <strong>[LOCATION]</strong>. Highlight how this unique offering solves <strong>[LOCAL PROBLEM/NEED]</strong>. Tone: Journalistic and prestigious."</div>
+            </div>
+            <!-- Power Prompt 5 -->
+            <div class="prompt-card" style="border: 2px solid var(--accent-color);">
+                <div class="prompt-title">The "Recruitment" Talent Magnet</div>
+                <div class="prompt-content">"Create a <strong>[TONE]</strong> job post for a <strong>[ROLE]</strong> at <strong>[SPA NAME]</strong>. Focus on our values of <strong>[VALUE 1]</strong> and <strong>[VALUE 2]</strong>. Describe the ideal candidate as a <strong>[QUALITIES]</strong> professional and list 3 unique perks of joining our team."</div>
+            </div>
+            <!-- Power Prompt 6 -->
+            <div class="prompt-card" style="border: 2px solid var(--accent-color);">
+                <div class="prompt-title">The "Membership" Tier Architect</div>
+                <div class="prompt-content">"Design a 3-tier membership program for a <strong>[SPA TYPE]</strong>. Tier 1: <strong>[LOW PRICE]</strong>, Tier 2: <strong>[MID PRICE]</strong>, Tier 3: <strong>[VIP PRICE]</strong>. For each tier, list 3 benefits that create high perceived value for <strong>[TARGET AUDIENCE]</strong>."</div>
+            </div>
+            <!-- Power Prompt 7 -->
+            <div class="prompt-card" style="border: 2px solid var(--accent-color);">
+                <div class="prompt-title">The "Holiday Campaign" Macro-Planner</div>
+                <div class="prompt-content">"Plan a 4-week marketing campaign for <strong>[HOLIDAY, e.g., Valentine's Day]</strong> for <strong>[SPA NAME]</strong>. Include one main 'Hero Offer' for <strong>[SERVICE]</strong>, 4 email subject lines, and 2 social media hooks per week."</div>
+            </div>
+            <!-- Power Prompt 8 -->
+            <div class="prompt-card" style="border: 2px solid var(--accent-color);">
+                <div class="prompt-title">The "Expert" Workshop Outline</div>
+                <div class="prompt-content">"Create an outline for a 45-minute wellness workshop titled '<strong>[TOPIC]</strong>' for <strong>[TARGET AUDIENCE]</strong>. Include 5 key teaching points, an interactive demonstration of <strong>[SKILL/PRODUCT]</strong>, and a 'Special Offer' at the end."</div>
+            </div>
+            <!-- Power Prompt 9 -->
+            <div class="prompt-card" style="border: 2px solid var(--accent-color);">
+                <div class="prompt-title">The "Review Recovery" Specialist</div>
+                <div class="prompt-content">"Draft a professional and empathetic response to a <strong>[STAR RATING]</strong> review on Google. The client mentioned <strong>[SPECIFIC ISSUE]</strong>. Acknowledge the feedback, explain our standard for <strong>[SERVICE]</strong>, and invite them to <strong>[ACTION]</strong>."</div>
+            </div>
+            <!-- Power Prompt 10 -->
+            <div class="prompt-card" style="border: 2px solid var(--accent-color);">
+                <div class="prompt-title">The "Brand Voice" Dictionary</div>
+                <div class="prompt-content">"Act as a branding expert. Based on our values of <strong>[VALUES]</strong> and our target audience of <strong>[AUDIENCE]</strong>, create a 'Brand Voice Guide' for <strong>[SPA NAME]</strong>. Include 5 'Words We Use' and 5 'Words We Avoid' to keep our <strong>[TONE]</strong> consistent."</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section: Final Tips -->
+    <section id="tips">
+        <div style="margin-top: 5rem; background: var(--secondary-bg); padding: 3rem; border-radius: 12px; text-align: center;">
+            <h3 style="margin-bottom: 2rem;">Final Tips for Using AI in Your Spa</h3>
+            <ul style="list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; text-align: left;">
+                <li><strong>Always Review & Edit:</strong> AI is a shortcut, not a replacement for your unique voice.</li>
+                <li><strong>Feed it Context:</strong> The more you tell AI about your spa's vibe (luxury vs. clinical), the better it performs.</li>
+                <li><strong>Use it for Administrative Tasks:</strong> Free up your brain from staff schedules and inventory emails.</li>
+                <li><strong>Stay Human:</strong> Use the time you save to connect deeper with your clients on the spa floor.</li>
+            </ul>
+        </div>
+    </section>
+</div>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2026 Spa & Wellness AI Academy. All rights reserved.</p>
+    </div>
+</footer>
+
+
+<script>
+    function copyPrompt(id) {
+        const text = document.getElementById(id).innerText.replace('Copy', '');
+        navigator.clipboard.writeText(text).then(() => {
+            const btn = document.querySelector(`#${id} .copy-btn`);
+            btn.innerText = 'Copied!';
+            setTimeout(() => { btn.innerText = 'Copy'; }, 2000);
+        });
+    }
+</script>
+
+</body>
+</html>
