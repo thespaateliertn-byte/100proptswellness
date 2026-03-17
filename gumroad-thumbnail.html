@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gumroad Thumbnail (600x600)</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 2rem;
+            background-color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .gumroad-thumb {
+            width: 600px;
+            height: 600px;
+            background: linear-gradient(180deg, #f0f2ee 0%, #d5dad1 100%);
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding-top: 50px;
+        }
+
+        .badge {
+            background-color: #8fa189;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 50px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 12px;
+            margin-bottom: 20px;
+            z-index: 2;
+            box-shadow: 0 4px 10px rgba(143,161,137,0.3);
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 52px;
+            color: #2c3e2d;
+            line-height: 1.1;
+            margin: 0 0 10px 0;
+            font-weight: 700;
+            z-index: 2;
+        }
+
+        h2 {
+            font-size: 18px;
+            color: #667c68;
+            margin: 0;
+            font-weight: 400;
+            letter-spacing: 1px;
+            z-index: 2;
+        }
+
+        .image-container {
+            width: 100%;
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            margin-top: 20px;
+            z-index: 1;
+            position: relative;
+        }
+
+        .image-container img {
+            width: 75%;
+            border-radius: 12px 12px 0 0;
+            box-shadow: 0 -10px 40px rgba(0,0,0,0.2);
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="gumroad-thumb">
+        <div class="badge">Digital Dashboard</div>
+        <h1>100 AI Prompts</h1>
+        <h2>FOR SPA & WELLNESS</h2>
+        
+        <div class="image-container">
+            <!-- Ensure this image matches the generated landing hero mockup -->
+            <img src="spa_landing_hero_1773750855975.png" alt="Ebook Mockup">
+        </div>
+    </div>
+
+</body>
+</html>
